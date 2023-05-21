@@ -7,7 +7,7 @@ let count = 1;
 export default async function fetchData(data) {
   try {
     const getImg = await axios.get(
-      `https://pixabay.com/api/key=${API_KEY}&q=${data}&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=${count}`
+      `https://pixabay.com/api/?key=${API_KEY}&q=${data}&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=${count}`
     );
     const response = await getImg.json();
     count += 1;
