@@ -26,3 +26,17 @@
   background-size: cover;
   background-position: center;
 }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-card {
+  width: 25%;
+}
+
+.info {
+  display: flex;
+  gap: 5px;
+}
